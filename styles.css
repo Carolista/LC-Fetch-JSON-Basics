@@ -69,6 +69,20 @@ p {
     margin: .5rem 0px; 
 }
 
+a {
+    color: #33066d;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #511a99;
+}
+
+a:visited {
+    color: #210249;
+}
+
 button {
     height: 1.6rem;
     padding: 5px 10px;

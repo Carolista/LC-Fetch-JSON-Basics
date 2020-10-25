@@ -21,10 +21,7 @@ body {
 }
 
 header {
-    color: white;
-	background-color: #c04e3a;
-    height: 120px;
-    padding: 20px 80px;
+    padding: 30px 80px 10px;
     box-sizing: border-box;
 }
 
@@ -33,7 +30,7 @@ main {
     flex-direction: column;
     justify-content: center;
 	width: 100%;
-    padding: 30px 80px;
+    padding: 20px 150px;
     box-sizing: border-box;
 }
 
@@ -41,32 +38,30 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 80px;
-    padding: 20px 80px;
+    padding: 20px 100px;
     box-sizing: border-box;
 }
 
 section {
-    margin: 0px;
-}
-
-div {
-    position: relative;
-	margin: 0px;
-	padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 0px;
+    box-sizing: border-box;
 }
 
 h1 {
     font-family: "Pacifico", cursive;
     font-size: 2.5rem;
-    margin: -15px 0px 0px;
+    color: #33066d;
+    text-align: center;
+    margin: 0px;
 }
 
 h2 {
-    font-size: 1.2rem;
-    font-weight: 200;
+    font-size: 1.7rem;
+    text-align: center;
     text-transform: uppercase;
-    letter-spacing: 3px;
     margin: 0px;
 }
 
@@ -75,20 +70,20 @@ p {
 }
 
 button {
-    height: 1.3rem;
-    padding: 3px;
+    height: 1.6rem;
+    padding: 5px 10px;
     color: white;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
-    background-color: #c04e3a;
+    background-color: #33066d;
     border: none;
     border-radius: 3px;
-    margin: 6px 0px 0px;
+    margin: 0px 15px 0px 15px;
 }
 
 button:hover {
     cursor: pointer;
-    background-color: #9c2813;
+    background-color: #511a99;
 }
 
 button:focus {
@@ -98,118 +93,19 @@ button:focus {
 
 /**** IDs for specific elements ****/
 
-#page-title {
-	color: white;
-	text-align: center;
-}
-
-#tagline {
-    color: white;
-	text-align: center;
-}
-
-#form-bar {
-    display: flex;
-    flex-direction: row;
-}
-
-#create {
-    visibility: visible;
-}
-
-#go-to-form {
-    width: 160px;
-}
-
-#new-entry {
-    visibility: hidden;
-}
-
-#submit {
-    background-color: #407404;
-    width: 50px;
-    margin: 0px;
-}
-
-#submit:hover {
-    background-color: #57990c;
-
-}
-
-#cancel {
-    width: 80px;
-    margin: 0px 0px 0px 10px;
+#result {
+    flex-direction: column;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 
 /**** Classes for custom styles ****/
 
-.input-item {
-    display: flex;
-    flex-direction: row;
-    margin: 5px 20px 5px 0px;
+.text-right {
+    text-align: right;
 }
 
-.day-header {
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-transform: uppercase;
+.text-left {
     text-align: left;
-    color: white;
-    background-color: #222;
-    width: calc(100vw - 160px);
-    height: 1.4rem;
-    border: none;
-    border-radius: 3px;
-    margin: 40px 0px 0px;
-    padding: 4px 8px;
-}
-
-.dot {
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    background-color: transparent; /* will actually be set by JS */
-    height: 1.2rem;
-    border: none;
-    border-radius: 3px;
-    margin: 0px 5px 0px 0px;
-    padding: 3px 6px;
-}
-
-.entry {
-    font-size: 1.1rem;
-}
-
-.container {
-    display: flex;
-}
-
-.row {
-    flex-direction: row;
-}
-
-.column {
-    flex-direction: column;
-}
-
-.hcenter {
-    justify-content: center; /* applies to flexbox only */
-}
-
-.vcenter {
-    align-items: center; /* applies to flexbox only */
-}
-
-/* fake CSS just to make quick color adjustments for colors object in JS file */
-.colors {
-    color: #c04e3a;
-    color: #e4823c;
-    color: #ebbb37;
-    color: #41cfbc;
-    color: #95ce40;
-    color: #49b9d4;
-    color: #458add;
-    color: #765add;
-    color: #53dd98;
-    color: #a954e6;
 }

@@ -1,0 +1,215 @@
+/**** CASCADING STYLE SHEET ****/
+
+/*
+    This sheet does not need to be edited unless you want to.
+*/
+
+/**** Defaults for standard elements ****/
+
+body {
+	background-color: white;
+	font-family: 'Heebo', sans-serif;
+	font-size: 12pt;
+	font-weight: 400;
+	color: #222; 
+	width: 100vw;
+	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+    overflow-x: hidden; 
+    box-sizing: border-box;
+}
+
+header {
+    color: white;
+	background-color: #c04e3a;
+    height: 120px;
+    padding: 20px 80px;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	width: 100%;
+    padding: 30px 80px;
+    box-sizing: border-box;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 80px;
+    padding: 20px 80px;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 0px;
+}
+
+div {
+    position: relative;
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 2.5rem;
+    margin: -15px 0px 0px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0px;
+}
+
+p {
+    margin: .5rem 0px; 
+}
+
+button {
+    height: 1.3rem;
+    padding: 3px;
+    color: white;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    background-color: #c04e3a;
+    border: none;
+    border-radius: 3px;
+    margin: 6px 0px 0px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #9c2813;
+}
+
+button:focus {
+    outline: 0;
+}
+
+
+/**** IDs for specific elements ****/
+
+#page-title {
+	color: white;
+	text-align: center;
+}
+
+#tagline {
+    color: white;
+	text-align: center;
+}
+
+#form-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+#create {
+    visibility: visible;
+}
+
+#go-to-form {
+    width: 160px;
+}
+
+#new-entry {
+    visibility: hidden;
+}
+
+#submit {
+    background-color: #407404;
+    width: 50px;
+    margin: 0px;
+}
+
+#submit:hover {
+    background-color: #57990c;
+
+}
+
+#cancel {
+    width: 80px;
+    margin: 0px 0px 0px 10px;
+}
+
+
+/**** Classes for custom styles ****/
+
+.input-item {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 20px 5px 0px;
+}
+
+.day-header {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left;
+    color: white;
+    background-color: #222;
+    width: calc(100vw - 160px);
+    height: 1.4rem;
+    border: none;
+    border-radius: 3px;
+    margin: 40px 0px 0px;
+    padding: 4px 8px;
+}
+
+.dot {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    background-color: transparent; /* will actually be set by JS */
+    height: 1.2rem;
+    border: none;
+    border-radius: 3px;
+    margin: 0px 5px 0px 0px;
+    padding: 3px 6px;
+}
+
+.entry {
+    font-size: 1.1rem;
+}
+
+.container {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.hcenter {
+    justify-content: center; /* applies to flexbox only */
+}
+
+.vcenter {
+    align-items: center; /* applies to flexbox only */
+}
+
+/* fake CSS just to make quick color adjustments for colors object in JS file */
+.colors {
+    color: #c04e3a;
+    color: #e4823c;
+    color: #ebbb37;
+    color: #41cfbc;
+    color: #95ce40;
+    color: #49b9d4;
+    color: #458add;
+    color: #765add;
+    color: #53dd98;
+    color: #a954e6;
+}

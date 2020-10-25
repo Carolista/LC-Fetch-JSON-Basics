@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!-- This file does not need to be edited unless you want to -->
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>This Week</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;600&family=Pacifico&display=swap" rel="stylesheet">
+    <script src = "scripts.js"></script>
+</head>
+
+<body>
+	
+	<header id="header">
+		<h1 id="page-title">This Week</h1>
+		<h2 id="tagline">I get to do all the things!</h2>
+	</header>
+
+	<main> 
+		<section id="form-bar">
+			<!-- FORM -->
+			<section id="new-entry">
+				<form id="form">
+					<div class="container row">
+						<div class="input-item">
+							<label>Day 
+								<select id="day" name="category">
+									<option></option>
+									<option value="sunday">Sunday</option>
+									<option value="monday">Monday</option>
+									<option value="tuesday">Tuesday</option>
+									<option value="wednesday">Wednesday</option>
+									<option value="thursday">Thursday</option>
+									<option value="friday">Friday</option>
+									<option value="saturday">Saturday</option>
+								</select>
+							</label>
+						</div>
+						<div class="input-item">
+							<label>Category
+								<select id="category" name="category">Category  
+									<option></option>
+									<option value="cooking">Cooking/Baking</option>
+									<option value="exercise">Exercise</option>
+									<option value="family">Family Time</option>
+									<option value="me">Me Time</option>
+									<option value="housework">Housework/Laundry</option>
+									<option value="projects">Projects/Hobbies</option>
+									<option value="errands">Shopping/Errands</option>
+									<option value="social">Social</option>
+									<option value="travel">Travel</option>
+									<option value="work">Work</option>
+									<option value="other">Other</option>
+								</select>
+							</label>
+						</div>
+						<div class="input-item">
+							<label>Activity 
+								<input id="activity" type="text" name="activity" maxlength="50">
+							</label>
+						</div>
+						<div class="container column">
+							<div id="create">
+								<button id="go-to-form">+ Create new entry</button>
+							</div>
+							<div id="container row">
+								<button id="submit" type="submit">Add</button>
+								<button id="cancel">Cancel</button>
+							</div>	
+						</div>					
+					</div>
+				</form>
+			</section>
+			
+		</section>
+
+		<section id="all-entries">
+			<section id="sunday-list"></section>
+			<section id="monday-list"></section>
+			<section id="tuesday-list"></section>
+			<section id="wednesday-list"></section>
+			<section id="thursday-list"></section>
+			<section id="friday-list"></section>
+			<section id="saturday-list"></section>
+		</section>
+
+    </main>
+    
+</body>
+
+</html>

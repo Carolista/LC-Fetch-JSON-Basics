@@ -27,43 +27,25 @@ window.addEventListener("load", function() {
     }
 
     // TODO: If the random advice button is clicked, put the advice in the result section
+    // The endpoint is https://api.adviceslip.com/advice
 
     // RANDOM ADVICE courtesy of https://api.adviceslip.com/
-    if (event.target.id === "advice") {
-      fetch('https://api.adviceslip.com/advice')
-        .then(response => response.json())
-        .then(data => {
-          // API returns data as a slip object
-          console.log(data); // to see full JSON object
-          result.innerHTML = `
-              <p>${data.slip.advice}</p>
-          `;
-      });
-    }
+
 
     // TODO: If dad joke button is clicked, put dad joke in result section
+    /*
+      The endpoint is https://icanhazdadjoke.com
+      This one also requires a header. Add the following object as the second argument in the fetch() function:
+      {
+        headers: {
+            Accept: "application/json",
+        }
+      }
+    */
     // Challenge! Use async/await syntax for this one.
 
     // RANDOM DAD JOKE courtesy of https://icanhazdadjoke.com/api
-    if (event.target.id === "dad-joke") {
 
-      async function getDadJoke() {
-        let response = await fetch("https://icanhazdadjoke.com/", {
-          // The API author requires this header
-          headers: {
-              Accept: "application/json",
-          }
-        });
-        let data = await response.json();
-
-        console.log(data); // to see full JSON object
-        result.innerHTML = `
-            <p>${data.joke}</p>
-        `;
-      }
-
-      getDadJoke();
-    }
 
   });
 });

@@ -1,125 +1,125 @@
 /**** CASCADING STYLE SHEET ****/
 
 /*
-    This sheet does not need to be edited unless you want to.
+  This sheet does not need to be edited unless you want to.
 */
 
 /**** Defaults for standard elements ****/
 
 body {
-	background-color: white;
-	font-family: 'Heebo', sans-serif;
-	font-size: 12pt;
-	font-weight: 400;
-	color: #222; 
-	width: 100vw;
-	height: 100vh;
-	margin: 0px;
-	padding: 0px;
-    overflow-x: hidden; 
-    box-sizing: border-box;
+  background-color: white;
+  font-family: 'Heebo', sans-serif;
+  font-size: 12pt;
+  font-weight: 400;
+  color: #222; 
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+  box-sizing: border-box;
 }
 
 header {
-    padding: 30px 80px 10px;
-    box-sizing: border-box;
+  padding: 30px 80px 10px;
+  box-sizing: border-box;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-	width: 100%;
-    padding: 20px 150px;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 150px;
+  box-sizing: border-box;
 }
 
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px 100px;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 100px;
+  box-sizing: border-box;
 }
 
 section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 10px 0px;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px 0px;
+  box-sizing: border-box;
 }
 
 h1 {
-    font-family: "Pacifico", cursive;
-    font-size: 2.5rem;
-    color: #33066d;
-    text-align: center;
-    margin: 0px;
+  font-family: "Pacifico", cursive;
+  font-size: 2.5rem;
+  color: #33066d;
+  text-align: center;
+  margin: 0px;
 }
 
 h2 {
-    font-size: 1.7rem;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0px;
+  font-size: 1.7rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px;
 }
 
 p {
-    margin: .5rem 0px; 
+  margin: .5rem 0px; 
 }
 
 a {
-    color: #33066d;
-    font-weight: 600;
-    text-decoration: none;
+  color: #33066d;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #511a99;
+  color: #511a99;
 }
 
 a:visited {
-    color: #210249;
+  color: #210249;
 }
 
 button {
-    height: 1.6rem;
-    padding: 5px 10px;
-    color: white;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    background-color: #33066d;
-    border: none;
-    border-radius: 3px;
-    margin: 0px 15px 0px 15px;
+  height: 1.6rem;
+  padding: 5px 10px;
+  color: white;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  background-color: #33066d;
+  border: none;
+  border-radius: 3px;
+  margin: 0px 15px 0px 15px;
 }
 
 button:hover {
-    cursor: pointer;
-    background-color: #511a99;
+  cursor: pointer;
+  background-color: #511a99;
 }
 
 button:focus {
-    outline: 0;
+  outline: 0;
 }
 
 
 /**** IDs for specific elements ****/
 
 #result {
-    flex-direction: column;
-    font-size: 1.5rem;
-    text-align: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 
 /**** Classes for custom styles ****/
 
 .text-right {
-    text-align: right;
+  text-align: right;
 }
 
 .text-left {
-    text-align: left;
+  text-align: left;
 }

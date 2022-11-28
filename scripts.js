@@ -1,4 +1,4 @@
-/*** Weekly Planner ***/
+/*** Random Quote, Advice, & Dad Jokes ***/
 
 /*
     Some practice on using fetch - utilizing three different public APIs (linked below)

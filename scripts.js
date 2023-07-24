@@ -6,7 +6,7 @@
 
 // Event listener for page load
 window.addEventListener('load', function () {
-  
+
   // Create object for result section
   let result = document.getElementById('result');
 
@@ -28,7 +28,6 @@ window.addEventListener('load', function () {
     }
 
     // TODO: If the random advice button is clicked, put the advice in the result section
-    // Challenge! Use arrow functions
     // RANDOM ADVICE courtesy of https://api.adviceslip.com/
     if (event.target.id === 'advice') {
       fetch('https://api.adviceslip.com/advice')

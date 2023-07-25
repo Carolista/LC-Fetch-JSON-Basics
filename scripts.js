@@ -27,14 +27,15 @@ window.addEventListener('load', function () {
     // TODO: If the random advice button is clicked, put the advice in the result section
     // RANDOM ADVICE courtesy of https://api.adviceslip.com/
     // Use the API documentation to look up the correct endpoint for a random slip
-    if (event.target.id === 'advice') {
-      fetch('https://api.adviceslip.com/advice').then(function (response) {
-        response.json().then(function (data) {
-          console.log(data);
+    if (event.target.id === "advice") {
+      fetch('https://api.adviceslip.com/advice')
+        .then(function (response) { return response.json() })
+        .then(function (data) {
+          // API returns data as a slip object
+          console.log(data); // to see full JSON object
           result.innerHTML = `
-            <p>${data.slip.advice}</p>
+              <p>${data.slip.advice}</p>
           `;
-        })
       });
     }
 
